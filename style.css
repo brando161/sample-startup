@@ -1,0 +1,170 @@
+body {
+  background-color: #222222;
+  margin: auto 0;
+}
+
+header {
+  width: 100%;
+}
+
+/* Navigation Bar */
+
+.logo {
+  width: auto;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 20px;
+  padding-top: 16px;
+}
+
+.nav-items {
+  color: #FFF9EC;
+}
+
+.nav-items:hover {
+  color: #93918E;
+}
+
+.active {
+  font-weight: bolder;
+  color: #FFF9EC;
+}
+
+/* Home Page Content */
+
+h1 {
+  color: #FFF9EC;
+  padding: 50px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.carousel {
+  margin: 40px;
+  border: 2px solid #FFF9EC;
+  padding: 20px;
+}
+
+.content-box {
+  background-color: #FFF9EC;
+  color: #222222;
+  border-top: 2px solid #D4AF37;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-box > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 25px;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  gap: 30px;
+  justify-content: center;
+}
+
+.home-caption {
+  width: 400px;
+  text-align: center;
+}
+
+.home-caption img {
+  width: 25rem;
+  height: 25rem;
+  padding: 5px;
+  border: 2px solid #D4AF37;
+  border-radius: 10px;
+}
+
+.home-caption > h5 {
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.container-signup {
+  background-color: #222222;
+  margin: 50px 40px;
+  border: 2px solid #FFF9EC;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#signup {
+  color: #FFF9EC;
+}
+
+.learn-more-btn {
+  padding: 10px 30px;
+  border-radius: 200px;
+  background-color: #D4AF37;
+  color: #222222;
+  font-weight: bolder;
+}
+
+.learn-more-btn:hover {
+  background-color: #d9bd64;
+  border-width: 3px;
+}
+
+/* Footer */
+
+footer {
+  color: #FFF9EC;
+  background-color: #222222;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+
+  .logo {
+   width: auto;
+   height: 75px;
+  }
+
+  .main-nav {
+    font-size: 15px;
+    padding: 16px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .container-signup,
+  .carousel {
+    margin: 40px 1rem;
+    padding: 15px;
+  }
+
+  .home-caption {
+    width: 350px;
+  }
+
+  .home-caption img {
+    width: 350px;
+  }
+}
+  
